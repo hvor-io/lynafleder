@@ -1,0 +1,50 @@
+<!-- https://getserva.com/?ref=onepagelove -->
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dette Sted Findes Ikke</title>
+    <!-- Add your CSS files here -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;700&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body class="has-navbar-fixed-top">
+    <nav class="navbar is-fixed-top">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+                <img class="mr-2" src="assets/lyn2.png" id="logo"><div class="logo-text is-size-4">Lynafleder</div>
+            </a>
+        </div>
+    </nav>
+    <section class="section top-section header">
+        <div class="columns has-text-centered">
+            <div class="column is-half" style="height: 800px; position: relative !important"> 
+                <div style="" class="">
+                    <div class="logo-text">LYNAFLEDER</div>
+                <div class="logo-text-outline">LYNAFLEDER</div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Add your JavaScript files here -->
+     <script>
+        const navbar = document.querySelector('.navbar');
+        const navbarHeight = navbar.getBoundingClientRect().height;
+
+        window.addEventListener('scroll', function() {
+            // add padding top to show content behind navbar
+            if (window.scrollY > navbarHeight) {
+                navbar.classList.add('navbar-white');      //adding CSS effect
+            // remove padding top from body        
+            } else {
+                navbar.classList.remove('navbar-white');  // removing CSS effect
+            } 
+        });
+    </script>
+</body>
+</html>

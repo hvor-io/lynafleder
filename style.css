@@ -1,0 +1,74 @@
+
+:root {
+  --primary--01: #FFFBEE;
+  --primary: #4c69f6;
+  --primary-01:#ddc3b8;
+  --primary-02:#c9b1a7;
+  --primary-03: #b7a198;
+
+}
+@font-face {font-family: KablamLayer; src: url('assets/KaBlamUnder.ttf');}
+@font-face {font-family: Kablam; src: url('assets/KaBlam.ttf');}
+
+html {
+    font-family: Barlow !important;
+}
+
+body {
+  height: 100vh;
+}
+
+.logo-text {
+  font-family: KablamLayer;
+  color: black;
+  position: absolute;
+  word-break: normal;
+  top: 0;
+  left: 0;
+  font-size: 8rem;
+}
+
+.logo-text-outline {
+  font-family: Kablam;
+  color: yellow;
+  word-break: normal;
+  position: absolute;
+  top: 0;
+  left: 0;  
+  font-size: 8rem;
+}
+
+
+.header {
+    position: relative;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: var(--primary);
+    transition: 150ms;
+}
+
+.navbar-white {
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(0.5rem);
+  box-shadow: 0 1px 4px rgba(15, 15, 16, 0.075);
+}
+
+.top-section {
+  height: 80vh;
+  background-color: var(--primary);
+
+}
+
+.title {
+  font-size: 10rem;
+  position: relative;
+}
+
+
+#logo {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border-radius: 4px;
+}

@@ -1,86 +1,48 @@
-<p align="center"> 
-  <img src="assets/lyn2.png" alt="Project logo" width="80px" height="80px">
+<p align="center">
+  <a href="./">
+    <picture>
+      <source height="125" media="(prefers-color-scheme: dark)" srcset="">
+      <img height="125" alt="Fiber" src="./assets/sol2.png">
+    </picture>
+  </a>
+  <br>
 </p>
-<h1 align="center"> Lynafleder </h1>
-<h3 align="center"> Hvor lynet slår ned </h3>
-<h5 align="center"> ... </h5>
-
-
-<!-- TABLE OF CONTENTS -->
-<h2 id="table-of-contents"> :book: Table of Contents</h2>
-
-<details open="open">
-  <summary>Table of Contents</summary>
-  <ol>
-    <li><a href="#about-the-project"> ➤ About The Project</a></li>
-    <li><a href="#overview"> ➤ Overview</a></li>
-    <li><a href="#project-files-description"> ➤ Project Files Description</a></li>
-    <li><a href="#getting-started"> ➤ Getting Started</a></li>
-    <li><a href="#references"> ➤ References</a></li>
-
-  </ol>
-</details>
-
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-
-<!-- ABOUT THE PROJECT -->
-<h2 id="about-the-project"> :pencil: About The Project</h2>
-
-<p align="justify"> 
-  ...
+<p align="center">
+  <em><b>Plads-i-solen</b> er en app du kan bruge til når du gerne vil finde den perfekte plads på en solskinsdag</em>
 </p>
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+### BTW: App'en er under udvikling! 🥳 🚀
 
-<!-- OVERVIEW -->
-<h2 id="overview"> :cloud: Overview</h2>
+<br>
 
-<p align="justify"> 
-  In this project, ...
-</p>
+# 🧐 Projektbeskrivelse
+Er det muligt at udpege områder med høj solintensitet. Ikke for at finde placeringer til solceller men for at finde steder man kan nyde solens stråler - særligt vigtigt i vores ellers mørke og regnfyldte land :)
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+Kort sagt bruger vi en normaliseret højdemodel til at beregne skygger ud fra lokale højder. Dette gør vi med et regelmæssigt tidsrum (hver time), hvilket vi samler til  en tidsserie som det kan ses her nedenfor:
+<img height="250" alt="DTM" src="./assets/dem/dtm.png"><img height="250" alt="Shadows" src="./assets/shadows/shadows.gif">
 
-<!-- PROJECT FILES DESCRIPTION -->
-<h2 id="project-files-description"> :floppy_disk: Project Files Description</h2>
+**Read more about the Well app on [the project homepage](https://projects.colegaw.in/well-app?utm_source=GitHub&utm_medium=readme&utm_campaign=well_app_readme).**
 
-<ul>
-  <li><b>search.py</b> - Where all of the search algorithms reside.</li>
-  <li><b>searchAgents.py</b> - Where all of the search-based agents reside.</li>
-  <li><b>pacman.py</b> - The main file that runs Pacman games. This file also describes a Pacman GameState types.</li>
-  <li><b>game.py</b> - The logic behind how the Pacman world works.</li>
-  <li><b>util.py</b> - Useful data structures for implementing search algorithms.</li>
-</ul>
+# 👨‍💻 Tech stack
 
-<h3>Some other supporting files</h3>
-<ul>
-  <li><b>graphicsDisplay.py</b> - Graphics for Pacman.</li>
-  <li><b>graphicsUtils.py</b> - Support for Pacman graphics.</li>
-  <li><b>textDisplay.py</b> - ASCII graphics for Pacman.</li>
-  <li><b>ghostAgents.py</b> - Agents to control ghosts.</li>
-  <li><b>keyboardAgents.py</b> - Keyboard interfaces to control Pacman.</li>
-  <li><b>layout.py</b> - Code for reading layout files and storing their contents.</li>
-  <li><b>autograder.py</b> - Project autograder.</li>
-  <li><b>testParser.py</b> - Parses autograder test and solution files.</li>
-  <li><b>testClasses.py</b> - General autograding test classes.</li>
-  <li><b>test_cases/</b> - Directory containing the test cases for each scenario.</li>
-  <li><b>searchTestClasses.py</b> - Project specific autograding test classes.</li>
-</ul>
+Hvilke teknologier bruger jeg til at lave det? Kort fortalt:
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+- GRASS GIS 
+- Python
+- DigitalOcean
 
-<!-- GETTING STARTED -->
-<h2 id="getting-started"> :book: Getting Started</h2>
+Med lidt flere ord:
 
-<p>You are able to start the game by typing the following commands in the command line:</p>
-<pre><code>$ python pacman.py</code></pre>
+GRASS GIS er et stykke Open Source GIS Software der indeholder en lang række veludviklede algoritmer - herunder en avanceret skyggeberegner. 
 
-<p>You can see the list of all options and their default values via:</p>
-<pre><code>$ python pacman.py -h</code></pre>
-<i>Note that all of the commands that appear in this project also appear in <code>commands.txt</code>, for easy copying and pasting.</i>
+Disse processer kobles sammen ved hjælp af Python. Det er ikke _helt_ plug&play at anvende Python sammen med GRASS men det kunne håndteres.
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+DigitalOcean bruges som platform til at køre det hele fra. En Ubuntu maskine trækker læsset.
 
-<!-- CREDITS -->
-<h2 id="credits"> :scroll: Credits</h2>
+# ✍️ To do
+* Byg front-end til data udstilling
+* Find en ordentlig clustering algoritme til tidsserier
 
+
+# 💛
+Lavet med kærlighed
